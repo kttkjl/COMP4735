@@ -1,0 +1,30 @@
+
+output/kernel.o:     file format elf32-littlearm
+
+Contents of section .text:
+ 0000 00482de9 04b08de2 10d04de2 08000be5  .H-.......M.....
+ 0010 0c100be5 10200be5 feffffeb 0020e0e3  ..... ....... ..
+ 0020 3210a0e3 7d0fa0e3 feffffeb 6130a0e3  2...}.......a0..
+ 0030 0020e0e3 fa1fa0e3 fa0fa0e3 feffffeb  . ..............
+ 0040 feffffeb 28309fe5 03308fe0 0310a0e1  ....(0...0......
+ 0050 0000a0e3 feffffeb 0000a0e3 feffffeb  ................
+ 0060 0030a0e1 0310a0e1 0000a0e3 feffffeb  .0..............
+ 0070 f8ffffea 24000000                    ....$...        
+Contents of section .rodata:
+ 0000 464f4955 45484654 4f494557 4a47504f  FOIUEHFTOIEWJGPO
+ 0010 45574a5b 4f45574a 46504f45 574a5d3a  EWJ[OEWJFPOEWJ]:
+ 0020 0a0d00                               ...             
+Contents of section .comment:
+ 0000 00474343 3a202847 4e552054 6f6f6c73  .GCC: (GNU Tools
+ 0010 20666f72 2041726d 20456d62 65646465   for Arm Embedde
+ 0020 64205072 6f636573 736f7273 20382d32  d Processors 8-2
+ 0030 3031382d 71342d6d 616a6f72 2920382e  018-q4-major) 8.
+ 0040 322e3120 32303138 31323133 20287265  2.1 20181213 (re
+ 0050 6c656173 6529205b 6763632d 382d6272  lease) [gcc-8-br
+ 0060 616e6368 20726576 6973696f 6e203236  anch revision 26
+ 0070 37303734 5d00                        7074].          
+Contents of section .ARM.attributes:
+ 0000 41340000 00616561 62690001 2a000000  A4...aeabi..*...
+ 0010 05375645 00060a07 41080109 02120414  .7VE....A.......
+ 0020 01150117 03180119 011a011e 0622012a  .............".*
+ 0030 012c0244 03                          .,.D.           
