@@ -18,23 +18,144 @@ Disassembly of section .text:
   28:	ebfffffe 	bl	0 <hal_io_video_putpixel>
   2c:	e3a03061 	mov	r3, #97	; 0x61
   30:	e3e02000 	mvn	r2, #0
-  34:	e3a01ffa 	mov	r1, #1000	; 0x3e8
-  38:	e3a00ffa 	mov	r0, #1000	; 0x3e8
+  34:	e3a01050 	mov	r1, #80	; 0x50
+  38:	e3a00032 	mov	r0, #50	; 0x32
   3c:	ebfffffe 	bl	0 <hal_io_video_putc>
-  40:	ebfffffe 	bl	0 <hal_io_serial_init>
-  44:	e59f3028 	ldr	r3, [pc, #40]	; 74 <main+0x74>
-  48:	e08f3003 	add	r3, pc, r3
-  4c:	e1a01003 	mov	r1, r3
-  50:	e3a00000 	mov	r0, #0
-  54:	ebfffffe 	bl	0 <hal_io_serial_puts>
-  58:	e3a00000 	mov	r0, #0
-  5c:	ebfffffe 	bl	0 <hal_io_serial_getc>
-  60:	e1a03000 	mov	r3, r0
-  64:	e1a01003 	mov	r1, r3
-  68:	e3a00000 	mov	r0, #0
-  6c:	ebfffffe 	bl	0 <hal_io_serial_putc>
-  70:	eafffff8 	b	58 <main+0x58>
-  74:	00000024 	andeq	r0, r0, r4, lsr #32
+  40:	e3a03062 	mov	r3, #98	; 0x62
+  44:	e3e02000 	mvn	r2, #0
+  48:	e3a01050 	mov	r1, #80	; 0x50
+  4c:	e3a00064 	mov	r0, #100	; 0x64
+  50:	ebfffffe 	bl	0 <hal_io_video_putc>
+  54:	e3a03063 	mov	r3, #99	; 0x63
+  58:	e3e02000 	mvn	r2, #0
+  5c:	e3a01050 	mov	r1, #80	; 0x50
+  60:	e3a00096 	mov	r0, #150	; 0x96
+  64:	ebfffffe 	bl	0 <hal_io_video_putc>
+  68:	e3a03064 	mov	r3, #100	; 0x64
+  6c:	e3e02000 	mvn	r2, #0
+  70:	e3a01050 	mov	r1, #80	; 0x50
+  74:	e3a000c8 	mov	r0, #200	; 0xc8
+  78:	ebfffffe 	bl	0 <hal_io_video_putc>
+  7c:	e3a03065 	mov	r3, #101	; 0x65
+  80:	e3e02000 	mvn	r2, #0
+  84:	e3a01050 	mov	r1, #80	; 0x50
+  88:	e3a000fa 	mov	r0, #250	; 0xfa
+  8c:	ebfffffe 	bl	0 <hal_io_video_putc>
+  90:	e3a03066 	mov	r3, #102	; 0x66
+  94:	e3e02000 	mvn	r2, #0
+  98:	e3a01050 	mov	r1, #80	; 0x50
+  9c:	e3a00f4b 	mov	r0, #300	; 0x12c
+  a0:	ebfffffe 	bl	0 <hal_io_video_putc>
+  a4:	e3a03067 	mov	r3, #103	; 0x67
+  a8:	e3e02000 	mvn	r2, #0
+  ac:	e3a01050 	mov	r1, #80	; 0x50
+  b0:	e300015e 	movw	r0, #350	; 0x15e
+  b4:	ebfffffe 	bl	0 <hal_io_video_putc>
+  b8:	e3a03068 	mov	r3, #104	; 0x68
+  bc:	e3e02000 	mvn	r2, #0
+  c0:	e3a01050 	mov	r1, #80	; 0x50
+  c4:	e3a00e19 	mov	r0, #400	; 0x190
+  c8:	ebfffffe 	bl	0 <hal_io_video_putc>
+  cc:	e3a03001 	mov	r3, #1
+  d0:	e3e02000 	mvn	r2, #0
+  d4:	e3a01050 	mov	r1, #80	; 0x50
+  d8:	e30001c2 	movw	r0, #450	; 0x1c2
+  dc:	ebfffffe 	bl	0 <hal_io_video_putc>
+  e0:	e3a03002 	mov	r3, #2
+  e4:	e3e02000 	mvn	r2, #0
+  e8:	e3a01050 	mov	r1, #80	; 0x50
+  ec:	e3a00f7d 	mov	r0, #500	; 0x1f4
+  f0:	ebfffffe 	bl	0 <hal_io_video_putc>
+  f4:	e3a0306b 	mov	r3, #107	; 0x6b
+  f8:	e3e02000 	mvn	r2, #0
+  fc:	e3a01050 	mov	r1, #80	; 0x50
+ 100:	e3000226 	movw	r0, #550	; 0x226
+ 104:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 108:	e3a0306c 	mov	r3, #108	; 0x6c
+ 10c:	e3e02000 	mvn	r2, #0
+ 110:	e3a01050 	mov	r1, #80	; 0x50
+ 114:	e3a00f96 	mov	r0, #600	; 0x258
+ 118:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 11c:	e3a0306d 	mov	r3, #109	; 0x6d
+ 120:	e3e02000 	mvn	r2, #0
+ 124:	e3a01050 	mov	r1, #80	; 0x50
+ 128:	e300028a 	movw	r0, #650	; 0x28a
+ 12c:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 130:	e3a0306e 	mov	r3, #110	; 0x6e
+ 134:	e3e02000 	mvn	r2, #0
+ 138:	e3a01050 	mov	r1, #80	; 0x50
+ 13c:	e3a00faf 	mov	r0, #700	; 0x2bc
+ 140:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 144:	e3a0306f 	mov	r3, #111	; 0x6f
+ 148:	e3e02000 	mvn	r2, #0
+ 14c:	e3a01050 	mov	r1, #80	; 0x50
+ 150:	e30002ee 	movw	r0, #750	; 0x2ee
+ 154:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 158:	e3a03070 	mov	r3, #112	; 0x70
+ 15c:	e3e02000 	mvn	r2, #0
+ 160:	e3a01050 	mov	r1, #80	; 0x50
+ 164:	e3a00e32 	mov	r0, #800	; 0x320
+ 168:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 16c:	e3a03071 	mov	r3, #113	; 0x71
+ 170:	e3e02000 	mvn	r2, #0
+ 174:	e3a01050 	mov	r1, #80	; 0x50
+ 178:	e3000352 	movw	r0, #850	; 0x352
+ 17c:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 180:	e3a03072 	mov	r3, #114	; 0x72
+ 184:	e3e02000 	mvn	r2, #0
+ 188:	e3a01050 	mov	r1, #80	; 0x50
+ 18c:	e3a00fe1 	mov	r0, #900	; 0x384
+ 190:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 194:	e3a03073 	mov	r3, #115	; 0x73
+ 198:	e3e02000 	mvn	r2, #0
+ 19c:	e3a0106e 	mov	r1, #110	; 0x6e
+ 1a0:	e3a00032 	mov	r0, #50	; 0x32
+ 1a4:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 1a8:	e3a03074 	mov	r3, #116	; 0x74
+ 1ac:	e3e02000 	mvn	r2, #0
+ 1b0:	e3a0106e 	mov	r1, #110	; 0x6e
+ 1b4:	e3a00064 	mov	r0, #100	; 0x64
+ 1b8:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 1bc:	e3a03075 	mov	r3, #117	; 0x75
+ 1c0:	e3e02000 	mvn	r2, #0
+ 1c4:	e3a0106e 	mov	r1, #110	; 0x6e
+ 1c8:	e3a00096 	mov	r0, #150	; 0x96
+ 1cc:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 1d0:	e3a03076 	mov	r3, #118	; 0x76
+ 1d4:	e3e02000 	mvn	r2, #0
+ 1d8:	e3a0106e 	mov	r1, #110	; 0x6e
+ 1dc:	e3a000c8 	mov	r0, #200	; 0xc8
+ 1e0:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 1e4:	e3a03077 	mov	r3, #119	; 0x77
+ 1e8:	e3e02000 	mvn	r2, #0
+ 1ec:	e3a0106e 	mov	r1, #110	; 0x6e
+ 1f0:	e3a000fa 	mov	r0, #250	; 0xfa
+ 1f4:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 1f8:	e3a03003 	mov	r3, #3
+ 1fc:	e3e02000 	mvn	r2, #0
+ 200:	e3a0106e 	mov	r1, #110	; 0x6e
+ 204:	e3a00f4b 	mov	r0, #300	; 0x12c
+ 208:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 20c:	e3a03004 	mov	r3, #4
+ 210:	e3e02000 	mvn	r2, #0
+ 214:	e3a0106e 	mov	r1, #110	; 0x6e
+ 218:	e300015e 	movw	r0, #350	; 0x15e
+ 21c:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 220:	e3a0307a 	mov	r3, #122	; 0x7a
+ 224:	e3e02000 	mvn	r2, #0
+ 228:	e3a0106e 	mov	r1, #110	; 0x6e
+ 22c:	e3a00e19 	mov	r0, #400	; 0x190
+ 230:	ebfffffe 	bl	0 <hal_io_video_putc>
+ 234:	ebfffffe 	bl	0 <hal_io_serial_init>
+ 238:	e59f3018 	ldr	r3, [pc, #24]	; 258 <main+0x258>
+ 23c:	e08f3003 	add	r3, pc, r3
+ 240:	e1a01003 	mov	r1, r3
+ 244:	e3a00000 	mov	r0, #0
+ 248:	ebfffffe 	bl	0 <hal_io_serial_puts>
+ 24c:	e320f000 	nop	{0}
+ 250:	e24bd004 	sub	sp, fp, #4
+ 254:	e8bd8800 	pop	{fp, pc}
+ 258:	00000014 	andeq	r0, r0, r4, lsl r0
 
 Disassembly of section .rodata:
 

@@ -201,9 +201,10 @@ mb0_c8_read:
 .globl _vc_draw_pixel
 _vc_draw_pixel:
 	push {r4-r9, lr}
-	@ mov r9, r2
+	mov r9, r2
 	mov r8, r1		@r1 is y -> r8
 	mov r7, r0		@r0 is x -> r7
+
 
 	@ get VC framebuffer address
 	ldr r1, =vc_alloc_fb
@@ -217,17 +218,18 @@ _vc_draw_pixel:
 	cmp r0, #0
 	beq .vc_init_fail
 
-	fb 			.req r0 		@assigning 1st arg, r4 to alias 'frame buffer'
+	fb 		.req r0 		@assigning 1st arg, r4 to alias 'frame buffer'
 	color 	.req r2 		@assigning 3rd arg, r2 to alias 'color'
-	x				.req r7
-	y 			.req r8
+	x		.req r7
+	y 		.req r8
 
 	@ ldr r6, =#282150
 
 	add fb, r7
 	add fb, r8;
 	
-	
+	ldr color, =#0xFFFFFFFF
+
 	str color, [fb, #0]	
 
 	pop {r4-r9}
